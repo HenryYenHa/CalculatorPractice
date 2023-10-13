@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <input id="sumDisplay" disabled />
+    <input id="currentDisplay" disabled />
+    <div id="calc">
+      <button id="button7" onclick="inputNum(7)">7</button>
+      <button id="button8" onclick="inputNum(8)">8</button>
+      <button id="button9" onclick="inputNum(9)">9</button>
+      <button id="button+" onclick="inputCommand('+')">+</button>
+      <button id="button4" onclick="inputNum(4)">4</button>
+      <button id="button5" onclick="inputNum(5)">5</button>
+      <button id="button6" onclick="inputNum(6)">6</button>
+      <button id="button-" onclick="inputCommand('-')">-</button>
+      <button id="button1" onclick="inputNum(1)">1</button>
+      <button id="button2" onclick="inputNum(2)">2</button>
+      <button id="button3" onclick="inputNum(3)">3</button>
+      <button id="buttonx" onclick="inputCommand('x')">x</button>
+      <button id="button0" onclick="inputNum(0)">0</button>
+      <button id="button." onclick="inputDecimal()">.</button>
+      <button id="buttonClear" onclick="clearInput()">Clear</button>
+      <button id="button+" onclick="inputCommand('/')">/</button>
+      <button id="button=" onclick="inputEqual()">=</button>
+      <button id="buttonAllClear" onclick="allClear()">AC</button>
+    </div>
+  </body>
+  <script src="calculator.js"></script>
+</html>
